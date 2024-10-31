@@ -1,0 +1,213 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.header {
+    background-color: #f6c826;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 62px;
+}
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.logo-text {
+    color: #000;
+    font: 600 36px 'Montserrat', sans-serif;
+    margin: 0;
+}
+.logo-subtext {
+    border-radius: 35px;
+    background-color: #416d85;
+    color: #fff;
+    padding: 2px 21px;
+    font: 400 24px 'Orienta', sans-serif;
+}
+.auth-buttons {
+    display: flex;
+    gap: 20px;
+}
+.btn {
+    border-radius: 40px;
+    padding: 10px 20px;
+    font: 600 18px 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.btn-outline {
+    background-color: #fff;
+    color: #3987fe;
+    border: 2px solid #3987fe;
+}
+.btn-primary {
+    background-color: #5181dd;
+    color: #fff;
+    border: none;
+}
+.btn:hover {
+    opacity: 0.8;
+}
+.main-content {
+    display: flex;
+    width: 100%;
+}
+.sidebar {
+    background-color: #d9d9d9;
+    padding: 30px 20px;
+    width: 16%;
+}
+.nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color: #444;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    font: 400 18px 'Montserrat', sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    width: 80%;
+}
+.nav-item i {
+    margin-right: 10px;
+}
+.nav-item-active, .nav-item:hover {
+    background-color: #5181dd;
+}
+.nav-item:last-child {
+    background-color: #5181dd;
+    color: #fff;
+}
+.content-area {
+    width: 84%;
+    padding: 20px 30px;
+}
+.search-bar {
+    border-radius: 73px;
+    background-color: #d9d9d9;
+    width: 100%;
+    max-width: 1118px;
+    padding: 15px 20px;
+    font: 400 24px 'Orienta', sans-serif;
+    margin-bottom: 30px;
+    border: none;
+}
+.divider {
+    background-color: #d9d9d9;
+    height: 2px;
+    margin-bottom: 20px;
+}
+.question-list {
+    color: #000;
+}
+.section-title {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.question-item {
+    display: flex;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+}
+.question-content {
+    width: 79%;
+}
+.question-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+.tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tag {
+    background-color: #d9d9d9;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+.question-meta {
+    width: 21%;
+    text-align: right;
+    color: #777373;
+    font: 400 16px 'Montserrat', sans-serif;
+}
+.author {
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 62px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+.footer-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.footer-link {
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+.footer-link i {
+    margin-right: 10px;
+}
+.footer-link:hover {
+    text-decoration: underline;
+}
+@media (max-width: 991px) {
+    .header {
+        padding: 10px 20px;
+        flex-wrap: wrap;
+    }
+    .logo-text {
+        font-size: 28px;
+    }
+    .logo-subtext {
+        font-size: 18px;
+    }
+    .main-content {
+        flex-direction: column;
+    }
+    .sidebar, .content-area {
+        width: 100%;
+    }
+    .question-item {
+        flex-direction: column;
+    }
+    .question-content, .question-meta {
+        width: 100%;
+    }
+    .question-meta {
+        text-align: left;
+        margin-top: 15px;
+    }
+    .footer {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-section {
+        margin-bottom: 20px;
+    }
+}
