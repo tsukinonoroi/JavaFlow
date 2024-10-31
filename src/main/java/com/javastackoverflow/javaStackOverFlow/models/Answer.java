@@ -18,6 +18,4 @@ public class Answer {
     private String description;
 
 
-
-
 }
