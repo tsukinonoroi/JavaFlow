@@ -16,7 +16,6 @@ import java.util.List;
 @Service
 public class TagService {
 
-    @Autowired
     private final TagRepository tagRepository;
     private List<String> tags = new ArrayList<>();
 
