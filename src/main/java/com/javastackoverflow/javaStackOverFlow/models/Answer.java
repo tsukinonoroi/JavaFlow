@@ -17,5 +17,7 @@ public class Answer {
     @Column(name = "description")
     private String description;
 
-
+    @ManyToOne
+    @JoinColumn(name = "author_id", nullable = false)
+    private User author;
 }
