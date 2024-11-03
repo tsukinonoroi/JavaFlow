@@ -17,7 +17,6 @@ import java.util.List;
 public class TagService {
 
     private final TagRepository tagRepository;
-    private List<String> tags = new ArrayList<>();
 
     @Transactional
     public void addTagInAllTagsList(String tagName) {
@@ -26,8 +25,12 @@ public class TagService {
         tagRepository.save(tag);
     }
 
+    public List<Tag> getAllTags() {
+        return tagRepository.findAll();
+    }
+
     @Transactional
-    public void deleteTagInAllTagsList(int id) {
+    public void deleteTagInAllTagsList(Long id) {
         tagRepository.deleteById(id);
     }
 }

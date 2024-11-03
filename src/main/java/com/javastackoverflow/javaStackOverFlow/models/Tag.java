@@ -9,7 +9,7 @@ import lombok.Data;
 public class Tag {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
     @Column(name = "tagName")
     private String tagName;
     

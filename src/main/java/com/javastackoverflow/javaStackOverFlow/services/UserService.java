@@ -42,7 +42,7 @@ public class UserService  {
         if (userRepository.findByEmail(user.getEmail()) != null) return false;
         user.setActive(true);
         user.setPassword(passwordEncoder.encode(user.getPassword()));
-        user.getRoles().add(Role.ROLE_USER);
+        user.getRoles().add(Role.ROLE_ADMIN);
 
         userRepository.save(user);
         log.info("Сохранили нового пользователя с email " + user.getEmail() + " и username " + user.getUsername());
